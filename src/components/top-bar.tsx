@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { NavLinks } from "./nav-links";
 
 export function TopBar({ children }: { children?: React.ReactNode }) {
   return (
@@ -14,7 +15,8 @@ export function TopBar({ children }: { children?: React.ReactNode }) {
             AlgoVision 3D
           </span>
         </Link>
-        <div className="flex-1 flex items-center justify-center">
+        <NavLinks />
+        <div className="flex-1 flex items-center justify-end">
           {children}
         </div>
       </div>
