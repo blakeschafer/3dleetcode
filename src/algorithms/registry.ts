@@ -7,6 +7,16 @@ const algorithmModules: Record<string, () => Promise<{ default: Algorithm }>> = 
   "graph-bfs": () => import("./graph-bfs"),
   "binary-search": () => import("./binary-search"),
   "sliding-window": () => import("./sliding-window"),
+  "merge-sort": () => import("./merge-sort"),
+  "quick-sort": () => import("./quick-sort"),
+  "insertion-sort": () => import("./insertion-sort"),
+  "two-pointers": () => import("./two-pointers"),
+  "binary-tree-bfs": () => import("./binary-tree-bfs"),
+  "heap-insert": () => import("./heap-insert"),
+  "graph-dfs": () => import("./graph-dfs"),
+  "dijkstra": () => import("./dijkstra"),
+  "stack-operations": () => import("./stack-operations"),
+  "linked-list-cycle": () => import("./linked-list-cycle"),
 };
 
 export async function getAlgorithm(slug: string): Promise<Algorithm | null> {

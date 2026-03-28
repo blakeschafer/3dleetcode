@@ -193,6 +193,7 @@ export const problems: Problem[] = ([
       "Fix one element and use two pointers for the remaining two.",
       "Skip duplicate values to avoid duplicate triplets in the result.",
     ],
+    visualizerSlug: "two-pointers",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -241,6 +242,7 @@ export const problems: Problem[] = ([
       "Start with pointers at both ends and narrow inward.",
       "If the sum is too big, decrease the right pointer; if too small, increase the left.",
     ],
+    visualizerSlug: "two-pointers",
     listMembership: ["NeetCode 150", "Grind 75"],
   },
 
@@ -375,6 +377,7 @@ export const problems: Problem[] = ([
       "When you see a closing bracket, it must match the most recent opening bracket (stack top).",
       "If the stack is empty at the end, all brackets were matched.",
     ],
+    visualizerSlug: "stack-operations",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -439,6 +442,7 @@ export const problems: Problem[] = ([
       "Use a second stack that tracks the minimum at each level.",
       "When pushing, push the min of (new value, current min) onto the min stack.",
     ],
+    visualizerSlug: "stack-operations",
     listMembership: ["NeetCode 150", "Grind 75"],
   },
   {
@@ -734,6 +738,7 @@ export const problems: Problem[] = ([
       "Floyd's algorithm uses two pointers: slow (1 step) and fast (2 steps).",
       "If there's a cycle, the fast pointer will eventually catch up to the slow pointer.",
     ],
+    visualizerSlug: "linked-list-cycle",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -850,6 +855,7 @@ export const problems: Problem[] = ([
       "Use a queue and process all nodes at the current depth before going deeper.",
       "Track the number of nodes at each level to know when a level ends.",
     ],
+    visualizerSlug: "binary-tree-bfs",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -954,6 +960,7 @@ export const problems: Problem[] = ([
       "DFS: visit right subtree first, record the first node at each depth.",
       "Track the current depth to know when you've reached a new level.",
     ],
+    visualizerSlug: "binary-tree-bfs",
     listMembership: ["NeetCode 150", "Grind 75"],
   },
   {
@@ -1141,6 +1148,7 @@ export const problems: Problem[] = ([
       "Quickselect is the average O(n) approach based on partitioning.",
       "Sorting works but costs O(n log n).",
     ],
+    visualizerSlug: "quick-sort",
     listMembership: ["NeetCode 150", "Grind 75"],
   },
   {
@@ -1205,6 +1213,7 @@ export const problems: Problem[] = ([
       "When adding, if the new value is larger than the heap top, replace it.",
       "The heap top is always your answer.",
     ],
+    visualizerSlug: "heap-insert",
     listMembership: ["NeetCode 150"],
   },
   {
@@ -1595,6 +1604,7 @@ export const problems: Problem[] = ([
       "Use DFS/BFS to count connected '1' cells for each island.",
       "Update the maximum area after each complete island traversal.",
     ],
+    visualizerSlug: "graph-dfs",
     listMembership: ["NeetCode 150", "Grind 75"],
   },
   {
@@ -1611,6 +1621,7 @@ export const problems: Problem[] = ([
       "Use Dijkstra's algorithm with a min-heap.",
       "The answer is the max distance among all nodes; if any node is unreachable, return -1.",
     ],
+    visualizerSlug: "dijkstra",
     listMembership: ["NeetCode 150"],
   },
   {
@@ -1627,6 +1638,7 @@ export const problems: Problem[] = ([
       "Bellman-Ford with k+1 iterations naturally limits the number of edges used.",
       "Use a copy of the distance array to avoid using paths found in the current iteration.",
     ],
+    visualizerSlug: "dijkstra",
     listMembership: ["NeetCode 150"],
   },
   {
@@ -2530,7 +2542,7 @@ export const problems: Problem[] = ([
       "Divide the array in half, sort each half, then merge.",
       "Quicksort is often faster in practice but has O(n^2) worst case without randomization.",
     ],
-    visualizerSlug: "bubble-sort",
+    visualizerSlug: "merge-sort",
     listMembership: [],
   },
 ] as const).map((p): Problem => ({ ...p, tags: [...p.tags], hints: [...p.hints], listMembership: [...p.listMembership] })).sort((a, b) => a.id - b.id);
