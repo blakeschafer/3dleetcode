@@ -4,7 +4,8 @@ const heapInsert: Algorithm = {
   name: "Heap Insert (Min-Heap)",
   slug: "heap-insert",
   category: "Trees",
-  description: "Insert elements into a min-heap, bubbling up each new element to maintain the heap property.",
+  description: "Insert elements into a min-heap, bubbling up each new element to maintain heap order.",
+  longDescription: "A min-heap is a complete binary tree where every parent is smaller than its children. To insert, place the new element at the bottom, then 'bubble up' by swapping with its parent while it's smaller. Watch new nodes appear at the bottom and float upward to their correct position. Heaps power priority queues — O(log n) insert and O(1) access to the minimum.",
   complexity: { time: "O(log n) per insert", space: "O(n)" },
   code: [
     "function heapInsert(heap, val) {",

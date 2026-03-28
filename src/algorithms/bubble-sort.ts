@@ -5,6 +5,7 @@ const bubbleSort: Algorithm = {
   slug: "bubble-sort",
   category: "Arrays",
   description: "Repeatedly swap adjacent elements if they are in the wrong order.",
+  longDescription: "Bubble Sort works by repeatedly stepping through the array, comparing adjacent elements, and swapping them if they're in the wrong order. The largest unsorted element 'bubbles up' to its correct position after each pass. Watch how elements glow yellow during comparisons and swap positions when out of order. After each full pass, one more element at the end is locked into place.",
   complexity: { time: "O(n²)", space: "O(1)" },
   code: [
     "function bubbleSort(arr) {",

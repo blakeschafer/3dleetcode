@@ -4,8 +4,8 @@ const heapSort: Algorithm = {
   name: "Heap Sort",
   slug: "heap-sort",
   category: "Arrays",
-  description:
-    "Build a max heap from the array, then repeatedly extract the maximum element and place it at the end.",
+  description: "Build a max heap from the array, then repeatedly extract the maximum element.",
+  longDescription: "Heap Sort first builds a max-heap from the array (parent always larger than children), then repeatedly extracts the maximum element from the root and places it at the end. Watch elements get compared and swapped as the heap property is enforced during build and extraction phases. It guarantees O(n log n) time with O(1) extra space — an in-place comparison sort.",
   complexity: { time: "O(n log n)", space: "O(1)" },
   code: [
     "function heapSort(arr) {",

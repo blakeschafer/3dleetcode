@@ -4,8 +4,8 @@ const depthLimitedSearch: Algorithm = {
   name: "Depth-Limited Search",
   slug: "depth-limited-search",
   category: "Graphs",
-  description:
-    "Perform DFS but stop exploring once a specified depth limit is reached, preventing infinite descent in deep or cyclic graphs.",
+  description: "Explore a graph depth-first but stop when reaching a specified depth limit.",
+  longDescription: "Depth-Limited Search is DFS with a maximum depth constraint — it won't explore beyond the specified limit. This prevents DFS from going infinitely deep in large or infinite graphs. Watch the search dive into branches but stop and backtrack when hitting the depth limit. It's a building block for Iterative Deepening DFS, which combines BFS's completeness with DFS's memory efficiency.",
   complexity: { time: "O(b^l)", space: "O(l)" },
   code: [
     "function dls(graph, node, goal, limit) {",

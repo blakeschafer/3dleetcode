@@ -8,7 +8,8 @@ const linkedListCycle: Algorithm = {
   name: "Linked List Cycle Detection",
   slug: "linked-list-cycle",
   category: "Linked Lists",
-  description: "Detect a cycle using Floyd's tortoise and hare algorithm with slow and fast pointers.",
+  description: "Detect a cycle using Floyd's tortoise and hare with slow and fast pointers.",
+  longDescription: "Floyd's Cycle Detection uses two pointers moving at different speeds — slow moves one step, fast moves two. If there's a cycle, fast will eventually lap slow and they'll meet. Watch the slow (tortoise) and fast (hare) pointers advance at different rates through the list. If they meet, there's a cycle. This O(n) time, O(1) space solution avoids needing a hash set to track visited nodes.",
   complexity: { time: "O(n)", space: "O(1)" },
   code: [
     "function hasCycle(head) {",

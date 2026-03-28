@@ -75,6 +75,9 @@ export default function VisualizerPage({
             }}
           />
         </div>
+        <div className="bg-[#131A2B] border border-[#1E2A3F] rounded-lg px-4 py-3">
+          <p className="text-sm text-[#8899AA] leading-relaxed">{algorithm.longDescription}</p>
+        </div>
         <VisualizerView
           algorithm={algorithm}
           presetData={algorithm.presets[presetIndex].data}

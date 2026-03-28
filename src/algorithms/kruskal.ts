@@ -4,8 +4,8 @@ const kruskal: Algorithm = {
   name: "Kruskal's Algorithm",
   slug: "kruskal",
   category: "Graphs",
-  description:
-    "Build a minimum spanning tree by sorting all edges by weight and adding them if they don't form a cycle (using Union-Find).",
+  description: "Build a minimum spanning tree by greedily adding the cheapest edges.",
+  longDescription: "Kruskal's Algorithm sorts all edges by weight, then greedily adds the cheapest edge that doesn't create a cycle (using Union-Find to detect cycles). Watch edges get considered from lightest to heaviest, with some rejected for forming cycles. The result connects all nodes with minimum total edge weight — used in network design, clustering, and approximation algorithms.",
   complexity: { time: "O(E log E)", space: "O(V)" },
   code: [
     "function kruskal(nodes, edges) {",

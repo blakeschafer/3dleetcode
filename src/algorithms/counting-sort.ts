@@ -4,8 +4,8 @@ const countingSort: Algorithm = {
   name: "Counting Sort",
   slug: "counting-sort",
   category: "Arrays",
-  description:
-    "Count the occurrences of each value, then reconstruct the sorted array from the counts.",
+  description: "Count occurrences of each value, then reconstruct the sorted array from counts.",
+  longDescription: "Counting Sort works by counting how many times each value appears, then using those counts to place elements in order. Unlike comparison sorts, it doesn't compare elements to each other. Watch as elements are counted (tallied) and then placed back into the array in sorted order. It runs in O(n+k) time where k is the range of values — incredibly fast when k is small.",
   complexity: { time: "O(n+k)", space: "O(k)" },
   code: [
     "function countingSort(arr) {",

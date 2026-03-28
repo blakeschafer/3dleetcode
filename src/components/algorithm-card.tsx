@@ -20,7 +20,7 @@ export function AlgorithmCard({ algorithm }: AlgorithmCardProps) {
           <MiniPreview algorithm={algorithm} />
         </div>
         <h3 className="text-lg font-semibold text-white mb-1">{algorithm.name}</h3>
-        <p className="text-sm text-[#8899AA] mb-3">{algorithm.description}</p>
+        <p className="text-sm text-[#8899AA] mb-3 line-clamp-2">{algorithm.description}</p>
         <div className="flex items-center gap-2">
           <span className="text-xs px-2 py-0.5 rounded bg-[#0B0F1A] border border-[#1E2A3F] text-[#00D4FF]">
             {algorithm.complexity.time}

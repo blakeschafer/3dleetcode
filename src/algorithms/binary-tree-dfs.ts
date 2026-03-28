@@ -33,6 +33,7 @@ const binaryTreeDfs: Algorithm = {
   slug: "binary-tree-dfs",
   category: "Trees",
   description: "Traverse a binary tree depth-first using inorder traversal (left, root, right).",
+  longDescription: "Depth-First Search on a tree goes as deep as possible along each branch before backtracking. Inorder traversal visits left subtree, then root, then right subtree — for BSTs this produces sorted order. Watch nodes light up as the recursion dives left, processes the current node, then explores right. The call stack determines the traversal path.",
   complexity: { time: "O(n)", space: "O(h)" },
   code: [
     "function inorderDFS(node) {",

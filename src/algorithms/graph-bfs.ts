@@ -5,6 +5,7 @@ const graphBfs: Algorithm = {
   slug: "graph-bfs",
   category: "Graphs",
   description: "Explore a graph level by level, visiting all neighbors before going deeper.",
+  longDescription: "BFS uses a queue to explore all neighbors at the current distance before moving further. Start from a source node, add it to the queue, then repeatedly dequeue a node and enqueue its unvisited neighbors. Watch the graph light up in expanding waves from the start node. BFS finds shortest paths in unweighted graphs and is used for level-order problems.",
   complexity: { time: "O(V+E)", space: "O(V)" },
   code: [
     "function bfs(graph, start) {",

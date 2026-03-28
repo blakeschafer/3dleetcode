@@ -4,7 +4,8 @@ const binarySearch: Algorithm = {
   name: "Binary Search",
   slug: "binary-search",
   category: "Arrays",
-  description: "Find a target value by repeatedly halving the search range.",
+  description: "Find a target by repeatedly halving the search range.",
+  longDescription: "Binary Search eliminates half the remaining elements with each comparison. It works only on sorted arrays — compare the target to the middle element, then search the left or right half. Watch the search window shrink with each step as eliminated elements dim out. This is why sorted data structures are so powerful — O(log n) vs O(n) linear search.",
   complexity: { time: "O(log n)", space: "O(1)" },
   code: [
     "function binarySearch(arr, target) {",

@@ -4,7 +4,8 @@ const insertionSort: Algorithm = {
   name: "Insertion Sort",
   slug: "insertion-sort",
   category: "Arrays",
-  description: "Build a sorted portion one element at a time by inserting each element into its correct position.",
+  description: "Build a sorted portion one element at a time by inserting each into its correct position.",
+  longDescription: "Insertion Sort works like sorting cards in your hand — take each new element and insert it into its correct position in the already-sorted portion. Watch elements shift right to make room for each insertion. It's O(n\u00B2) in general, but performs excellently on nearly-sorted data (O(n) best case), making it great for small arrays or as a final pass in hybrid sorts.",
   complexity: { time: "O(n^2)", space: "O(1)" },
   code: [
     "function insertionSort(arr) {",

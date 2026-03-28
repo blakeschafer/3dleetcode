@@ -5,6 +5,7 @@ const twoPointers: Algorithm = {
   slug: "two-pointers",
   category: "Arrays",
   description: "Use left and right pointers on a sorted array to find pairs that sum to a target.",
+  longDescription: "The Two Pointers technique uses two indices that move toward each other from opposite ends of a sorted array. If the current sum is too small, move the left pointer right to increase it. If too large, move the right pointer left to decrease it. Watch the pointers converge as they eliminate impossible pairs. This turns an O(n\u00B2) brute force into an elegant O(n) solution.",
   complexity: { time: "O(n)", space: "O(1)" },
   code: [
     "function twoSum(nums, target) {",

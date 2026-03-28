@@ -4,8 +4,8 @@ const topologicalSort: Algorithm = {
   name: "Topological Sort (Kahn's)",
   slug: "topological-sort",
   category: "Graphs",
-  description:
-    "Kahn's algorithm: repeatedly remove nodes with in-degree 0 to produce a valid topological ordering of a DAG.",
+  description: "Order nodes in a directed acyclic graph so every edge points forward.",
+  longDescription: "Topological Sort orders nodes so that for every directed edge A->B, A comes before B. Kahn's algorithm uses in-degrees: start with nodes that have no incoming edges, remove them, update in-degrees, and repeat. Watch nodes get processed in dependency order — like determining which courses to take first. Only works on DAGs — if there's a cycle, no valid ordering exists.",
   complexity: { time: "O(V+E)", space: "O(V)" },
   code: [
     "function topologicalSort(nodes, edges) {",

@@ -4,7 +4,8 @@ const graphDfs: Algorithm = {
   name: "Graph DFS",
   slug: "graph-dfs",
   category: "Graphs",
-  description: "Explore a graph by going as deep as possible along each branch before backtracking.",
+  description: "Explore a graph by going as deep as possible before backtracking.",
+  longDescription: "DFS explores as far as possible along each branch before backtracking. Using a stack (or recursion), visit a node, then immediately explore one of its unvisited neighbors. Watch the traversal dive deep into one path before backing up to try alternatives. DFS is used for cycle detection, topological sorting, connected components, and pathfinding in mazes.",
   complexity: { time: "O(V+E)", space: "O(V)" },
   code: [
     "function dfs(graph, start) {",

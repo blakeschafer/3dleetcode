@@ -41,8 +41,8 @@ const binaryTreeInvert: Algorithm = {
   name: "Invert Binary Tree",
   slug: "binary-tree-invert",
   category: "Trees",
-  description:
-    "Recursively swap the left and right children of every node in the tree.",
+  description: "Recursively swap every node's left and right children to mirror the tree.",
+  longDescription: "Inverting a binary tree means swapping every node's left and right subtrees, creating a mirror image. The algorithm recursively visits each node and swaps its children. Watch the tree transform as left and right branches swap at each level. This classic problem tests understanding of tree recursion — simple but elegant, and famously the question that inspired Homebrew's creator to quit Google interviews.",
   complexity: { time: "O(n)", space: "O(h)" },
   code: [
     "function invertTree(root) {",

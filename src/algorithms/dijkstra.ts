@@ -4,7 +4,8 @@ const dijkstra: Algorithm = {
   name: "Dijkstra's Algorithm",
   slug: "dijkstra",
   category: "Graphs",
-  description: "Find the shortest path from a source node to all other nodes in a weighted graph.",
+  description: "Find the shortest path from a source to all other nodes in a weighted graph.",
+  longDescription: "Dijkstra's Algorithm greedily picks the unvisited node with the smallest known distance, then updates distances to its neighbors. It builds a shortest-path tree outward from the source. Watch distances get updated as cheaper paths are discovered through newly visited nodes. It works only with non-negative edge weights — for negative weights, use Bellman-Ford instead.",
   complexity: { time: "O((V+E) log V)", space: "O(V)" },
   code: [
     "function dijkstra(graph, start) {",

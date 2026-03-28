@@ -4,8 +4,8 @@ const selectionSort: Algorithm = {
   name: "Selection Sort",
   slug: "selection-sort",
   category: "Arrays",
-  description:
-    "Find the minimum element from the unsorted portion and swap it to the front, repeating until sorted.",
+  description: "Find the minimum element in the unsorted portion and swap it to the front.",
+  longDescription: "Selection Sort divides the array into sorted (left) and unsorted (right) portions. In each pass, it scans the unsorted portion to find the minimum element, then swaps it to the end of the sorted portion. Watch as the algorithm scans right to find each minimum (highlighted), then swaps it into place. Simple but always O(n\u00B2) — it makes the minimum number of swaps though.",
   complexity: { time: "O(n²)", space: "O(1)" },
   code: [
     "function selectionSort(arr) {",

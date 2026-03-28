@@ -4,8 +4,8 @@ const kadane: Algorithm = {
   name: "Kadane's Algorithm",
   slug: "kadane",
   category: "Arrays",
-  description:
-    "Find the contiguous subarray with the maximum sum using a running sum that resets when it goes negative.",
+  description: "Find the contiguous subarray with the largest sum using a running maximum.",
+  longDescription: "Kadane's Algorithm scans through the array maintaining two values: the maximum sum ending at the current position, and the global maximum sum seen so far. At each step, decide whether to extend the current subarray or start fresh. Watch the current subarray expand when adding helps, and reset when starting over is better. This elegant O(n) solution solves a problem that seems to need O(n\u00B2).",
   complexity: { time: "O(n)", space: "O(1)" },
   code: [
     "function maxSubArray(nums) {",

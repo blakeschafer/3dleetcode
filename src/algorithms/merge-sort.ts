@@ -5,6 +5,7 @@ const mergeSort: Algorithm = {
   slug: "merge-sort",
   category: "Arrays",
   description: "Divide the array in half, recursively sort each half, then merge the sorted halves.",
+  longDescription: "Merge Sort uses divide-and-conquer: split the array in half until you have single elements, then merge pairs back together in sorted order. The merge step compares elements from both halves, picking the smaller one each time. Watch elements get compared and placed into their sorted positions. It guarantees O(n log n) time regardless of input — no worst cases like Quick Sort.",
   complexity: { time: "O(n log n)", space: "O(n)" },
   code: [
     "function mergeSort(arr) {",

@@ -5,6 +5,7 @@ const linkedListReversal: Algorithm = {
   slug: "linked-list-reversal",
   category: "Linked Lists",
   description: "Reverse a singly linked list by re-pointing each node's next pointer.",
+  longDescription: "Reversing a linked list uses three pointers: prev, curr, and next. At each step, save the next node, point curr's next to prev (reversing the link), then advance both pointers. Watch the arrows between nodes flip direction one by one as the list reverses in place. This O(n) in-place algorithm is a fundamental linked list operation and a common interview question.",
   complexity: { time: "O(n)", space: "O(1)" },
   code: [
     "function reverseList(head) {",

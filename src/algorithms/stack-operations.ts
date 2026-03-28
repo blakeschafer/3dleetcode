@@ -8,7 +8,8 @@ const stackOperations: Algorithm = {
   name: "Stack Operations",
   slug: "stack-operations",
   category: "Arrays",
-  description: "Validate parentheses using a stack: push opening brackets, pop on matching closers.",
+  description: "Validate parentheses using a stack — push opening brackets, pop on matching closers.",
+  longDescription: "A stack follows Last-In-First-Out (LIFO) — the most recent element added is the first removed. For parentheses validation, push each opening bracket onto the stack, and when you see a closing bracket, pop and check if it matches. Watch the stack grow with opening brackets and shrink with valid matches. If the stack is empty at the end, the string is valid.",
   complexity: { time: "O(n)", space: "O(n)" },
   code: [
     "function isValid(s) {",

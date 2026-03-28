@@ -10,6 +10,7 @@ const binaryTreeBfs: Algorithm = {
   slug: "binary-tree-bfs",
   category: "Trees",
   description: "Traverse a binary tree level by level using a queue (breadth-first).",
+  longDescription: "Breadth-First Search visits all nodes at the current depth before moving to the next level. It uses a queue — process the front node, add its children to the back. Watch the tree light up level by level, left to right. This is how you solve problems like 'find the minimum depth' or 'right side view' — anything that needs level-order information.",
   complexity: { time: "O(n)", space: "O(n)" },
   code: [
     "function levelOrder(root) {",

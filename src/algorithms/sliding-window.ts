@@ -4,7 +4,8 @@ const slidingWindow: Algorithm = {
   name: "Sliding Window",
   slug: "sliding-window",
   category: "Arrays",
-  description: "Find the minimum size subarray with a sum >= target using a sliding window.",
+  description: "Maintain a window over the array that expands and contracts to find optimal subarrays.",
+  longDescription: "The Sliding Window technique maintains a contiguous subarray (window) that expands to the right and contracts from the left. It's used when you need to find subarrays meeting certain conditions. Watch the window highlight grow as the right pointer advances, then shrink as the left pointer catches up when the condition is met. This avoids recalculating from scratch each time.",
   complexity: { time: "O(n)", space: "O(1)" },
   code: [
     "function minSubArrayLen(target, nums) {",

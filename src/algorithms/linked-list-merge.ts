@@ -4,8 +4,8 @@ const linkedListMerge: Algorithm = {
   name: "Merge Two Sorted Lists",
   slug: "linked-list-merge",
   category: "Linked Lists",
-  description:
-    "Merge two sorted linked lists by comparing heads and appending the smaller node each time.",
+  description: "Merge two sorted linked lists into one sorted list by comparing head elements.",
+  longDescription: "Merging two sorted lists compares the heads of both lists, takes the smaller one, and advances that list's pointer. Repeat until one list is empty, then append the remainder. Watch nodes get selected from alternating lists as the merged result builds. This is a key building block — it's the merge step in merge sort and solves the classic 'merge k sorted lists' problem.",
   complexity: { time: "O(n+m)", space: "O(1)" },
   code: [
     "function mergeTwoLists(l1, l2) {",

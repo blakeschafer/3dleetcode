@@ -82,8 +82,8 @@ const binarySearchTreeInsert: Algorithm = {
   name: "BST Insert",
   slug: "binary-search-tree-insert",
   category: "Trees",
-  description:
-    "Insert values into a Binary Search Tree by traversing left for smaller values and right for larger ones.",
+  description: "Insert a value into a BST by traversing left or right based on comparisons.",
+  longDescription: "BST insertion follows the binary search property: if the new value is less than the current node, go left; if greater, go right. Continue until you find an empty spot. Watch the algorithm traverse down the tree, comparing at each node, until it finds the correct leaf position. This maintains the BST invariant — left subtree values < root < right subtree values.",
   complexity: { time: "O(h)", space: "O(1)" },
   code: [
     "function insert(root, val) {",

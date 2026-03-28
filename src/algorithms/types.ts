@@ -18,6 +18,7 @@ export interface Algorithm {
   slug: string;
   category: Category;
   description: string;
+  longDescription: string;
   complexity: { time: string; space: string };
   code: string[];
   presets: Preset[];

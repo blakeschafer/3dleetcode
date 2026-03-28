@@ -5,6 +5,7 @@ const quickSort: Algorithm = {
   slug: "quick-sort",
   category: "Arrays",
   description: "Select a pivot, partition elements around it, then recursively sort the partitions.",
+  longDescription: "Quick Sort picks a pivot element and partitions the array so everything smaller goes left and everything larger goes right. Then it recursively sorts both sides. Watch the pivot get selected (highlighted) and elements rearrange around it. In practice, it's often faster than Merge Sort due to better cache locality, though its worst case is O(n\u00B2) with bad pivot choices.",
   complexity: { time: "O(n log n) avg, O(n^2) worst", space: "O(log n)" },
   code: [
     "function quickSort(arr, lo, hi) {",
