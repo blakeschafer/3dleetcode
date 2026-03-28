@@ -657,6 +657,7 @@ export const problems: Problem[] = ([
       "Compare heads of both lists; append the smaller one.",
       "Attach the remaining non-empty list at the end.",
     ],
+    visualizerSlug: "linked-list-merge",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -977,6 +978,7 @@ export const problems: Problem[] = ([
       "Recursively invert both subtrees.",
       "Base case: if the node is null, return null.",
     ],
+    visualizerSlug: "binary-tree-invert",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -1492,6 +1494,7 @@ export const problems: Problem[] = ([
       "If there's a cycle, not all courses can be completed.",
       "DFS with 3 states (unvisited, visiting, visited) detects cycles.",
     ],
+    visualizerSlug: "topological-sort",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {
@@ -1508,6 +1511,7 @@ export const problems: Problem[] = ([
       "Use Kahn's algorithm: process nodes with in-degree 0 first.",
       "If the result doesn't include all nodes, a cycle exists.",
     ],
+    visualizerSlug: "topological-sort",
     listMembership: ["NeetCode 150", "Grind 75"],
   },
   {
@@ -1687,6 +1691,7 @@ export const problems: Problem[] = ([
       "This is a minimum spanning tree (MST) problem.",
       "Prim's with a min-heap or Kruskal's with Union-Find both work.",
     ],
+    visualizerSlug: "kruskal",
     listMembership: ["NeetCode 150"],
   },
 
@@ -2102,6 +2107,7 @@ export const problems: Problem[] = ([
       "current_sum = max(nums[i], current_sum + nums[i]).",
       "Track the maximum current_sum seen across all positions.",
     ],
+    visualizerSlug: "kadane",
     listMembership: ["Blind 75", "NeetCode 150", "Grind 75"],
   },
   {

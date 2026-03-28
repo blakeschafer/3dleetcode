@@ -17,6 +17,16 @@ const algorithmModules: Record<string, () => Promise<{ default: Algorithm }>> = 
   "dijkstra": () => import("./dijkstra"),
   "stack-operations": () => import("./stack-operations"),
   "linked-list-cycle": () => import("./linked-list-cycle"),
+  "selection-sort": () => import("./selection-sort"),
+  "heap-sort": () => import("./heap-sort"),
+  "counting-sort": () => import("./counting-sort"),
+  "topological-sort": () => import("./topological-sort"),
+  "binary-tree-invert": () => import("./binary-tree-invert"),
+  "linked-list-merge": () => import("./linked-list-merge"),
+  "kadane": () => import("./kadane"),
+  "kruskal": () => import("./kruskal"),
+  "binary-search-tree-insert": () => import("./binary-search-tree-insert"),
+  "depth-limited-search": () => import("./depth-limited-search"),
 };
 
 export async function getAlgorithm(slug: string): Promise<Algorithm | null> {
