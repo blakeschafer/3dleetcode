@@ -1,6 +1,6 @@
 "use client";
 
-import { Algorithm, Step, ArrayPresetData, TreePresetData, LinkedListPresetData, GraphPresetData } from "@/algorithms/types";
+import { Algorithm, Step, SceneType, ArrayPresetData, TreePresetData, LinkedListPresetData, GraphPresetData } from "@/algorithms/types";
 import { SceneWrapper } from "./scene-wrapper";
 import { CodePanel } from "./code-panel";
 import { ArrayScene } from "@/three/array-scene";
@@ -14,6 +14,16 @@ interface VisualizerViewProps {
   currentStep: Step | null;
 }
 
+function getSceneType(algorithm: Algorithm): SceneType {
+  if (algorithm.sceneType) return algorithm.sceneType;
+  switch (algorithm.category) {
+    case "Arrays": return "array";
+    case "Trees": return "tree";
+    case "Linked Lists": return "linked-list";
+    case "Graphs": return "graph";
+  }
+}
+
 function SceneForAlgorithm({
   algorithm,
   presetData,
@@ -23,20 +33,22 @@ function SceneForAlgorithm({
   presetData: unknown;
   currentStep: Step | null;
 }) {
-  switch (algorithm.category) {
-    case "Arrays": {
+  const scene = getSceneType(algorithm);
+
+  switch (scene) {
+    case "array": {
       const { array } = presetData as ArrayPresetData;
       return <ArrayScene data={array} step={currentStep} />;
     }
-    case "Trees": {
+    case "tree": {
       const { root } = presetData as TreePresetData;
       return <TreeScene root={root} step={currentStep} />;
     }
-    case "Linked Lists": {
+    case "linked-list": {
       const { values } = presetData as LinkedListPresetData;
       return <LinkedListScene values={values} step={currentStep} />;
     }
-    case "Graphs": {
+    case "graph": {
       const { nodes, edges } = presetData as GraphPresetData;
       return <GraphScene nodes={nodes} edges={edges} step={currentStep} />;
     }

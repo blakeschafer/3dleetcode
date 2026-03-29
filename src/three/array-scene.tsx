@@ -5,7 +5,7 @@ import { CubeNode } from "./cube-node";
 import { SPACING } from "@/lib/constants";
 
 interface ArraySceneProps {
-  data: number[];
+  data: (number | string)[];
   step: Step | null;
 }
 

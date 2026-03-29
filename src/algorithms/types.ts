@@ -13,6 +13,8 @@ export interface Step {
   label: string;
 }
 
+export type SceneType = "array" | "tree" | "linked-list" | "graph";
+
 export interface Algorithm {
   name: string;
   slug: string;
@@ -24,6 +26,7 @@ export interface Algorithm {
   presets: Preset[];
   leetcodeProblems: string[];
   generateSteps: (data: unknown) => Step[];
+  sceneType?: SceneType;
 }
 
 export interface ArrayPresetData {
